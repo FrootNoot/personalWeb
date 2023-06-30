@@ -705,9 +705,18 @@ header {
   }
 
   #pucci-pic{
-    width: 500px;
-    height: 500px;
+    max-width: 500px;
+    height: auto;
   }
+
+.fade-in-animate{
+    opacity: 0;
+    transition: all 3s;
+}
+
+.show-fade{
+    opacity: 1;
+}
 
   
 .brief{
@@ -1023,6 +1032,8 @@ header {
 	}
 }
 
+
+
 .fade-in {
 	opacity: 1;
 	transition: 1s all ease-in;
@@ -1074,14 +1085,14 @@ header {
 
   }
   
-
+  @media (max-width: 500px) {
+    #pucci-pic {
+      width: 100%;
+    }
+  }
 
   @media only screen and (max-width: 800px) {
-    #pucci-pic{
-        width: 400px;
-        height: 400px;
-      }
-    
+
 
 
     .about-me-content{
