@@ -974,6 +974,7 @@ header {
     display: flex;
     justify-content: center;
     position: relative;
+    margin-top: 50px;
   }
   
   .arrow {
