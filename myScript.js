@@ -83,3 +83,12 @@ function scrollToElement(elementId) {
 		arrow.classList.remove("fade-in");
 	} 
 };
+
+document.addEventListener('swiped', function(e) {
+	let scrollPos = window.scrollY;
+	let arrow = document.getElementById("arrow");
+	if (scrollPos <= 3) {
+		arrow.classList.add("fade-out");
+		arrow.classList.remove("fade-in");
+	} 
+});
