@@ -6,15 +6,15 @@ const elementobserver = new IntersectionObserver((entries) => {
                 classList.add('show');
             } else if (classList.contains('heading-underline')) {
                 classList.add('heading-show');
-            }else if (classList.contains('hidden-right')) {
-                classList.add('show');
+            }else if (classList.contains('fade-in-animate')) {
+                classList.add('show-fade');
             }
             // Add more conditions for different classes and animation classes as needed
         } 
     });
 });
 
-const elements = document.querySelectorAll('.hidden, .heading-underline, .hidden-right');
+const elements = document.querySelectorAll('.hidden, .heading-underline, .fade-in-animate');
 elements.forEach((el) => elementobserver.observe(el));
 
 const contactForm = document.querySelector("#contact-form");
@@ -75,23 +75,22 @@ function scrollToElement(elementId) {
     });
   });
 
-  window.onscroll = function () {
-	let scrollPos = window.scrollY;
-	let arrow = document.getElementById("arrow");
-	if (scrollPos <= 3) {
-		arrow.classList.add("fade-out");
-		arrow.classList.remove("fade-in");
-	} 
-};
 
-function handleScroll() {
+
+function scrollDownHandler() {
     let arrow = document.getElementById("arrow");
     arrow.classList.add("fade-out");
     arrow.classList.remove("fade-in");
   }
   
+  var lastScrollPosition = 0;
+  
   window.addEventListener("scroll", function() {
-    if ((window.innerHeight + window.scrollY) >= document.body.offsetHeight) {
-      handleScroll();
+    var currentScrollPosition = window.pageYOffset || document.documentElement.scrollTop;
+  
+    if (currentScrollPosition > lastScrollPosition) {
+      scrollDownHandler();
     }
+  
+    lastScrollPosition = currentScrollPosition;
   });
