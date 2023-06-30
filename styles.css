@@ -12,7 +12,7 @@ html{
 }
 
 body {
-    background: pink;
+    background: #0b0f10;
     overflow-x: hidden;
     line-height: 1.5;
 }
@@ -1061,9 +1061,7 @@ header {
         margin-top: -20%;
     }
 
-    #arrow{
-        visibility: hidden;
-    }
+
   }
   
 
@@ -1077,6 +1075,15 @@ header {
     .about-me-content{
         flex-direction: column;
     }
+
+    .introduction{
+        margin-bottom: 80px;
+    }
+
+    .bx{
+        font-size: 700%;
+    }
+
     .brief{
         max-width: 90%;
     }
