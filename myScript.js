@@ -9,6 +9,7 @@ const elementobserver = new IntersectionObserver((entries) => {
             }else if (classList.contains('hidden-right')) {
                 classList.add('show');
             }
+            // Add more conditions for different classes and animation classes as needed
         } 
     });
 });
@@ -74,20 +75,16 @@ function scrollToElement(elementId) {
     });
   });
 
-  window.onscroll = function () {
-	let scrollPos = window.scrollY;
-	let arrow = document.getElementById("arrow");
-	if (scrollPos <= 3) {
-		arrow.classList.add("fade-out");
-		arrow.classList.remove("fade-in");
-	} 
-};
 
-document.addEventListener('swiped', function(e) {
-	let scrollPos = window.scrollY;
-	let arrow = document.getElementById("arrow");
-	if (scrollPos <= 3) {
-		arrow.classList.add("fade-out");
-		arrow.classList.remove("fade-in");
-	} 
-});
+
+function handleScroll() {
+    let arrow = document.getElementById("arrow");
+    arrow.classList.add("fade-out");
+    arrow.classList.remove("fade-in");
+  }
+  
+  window.addEventListener("scroll", function() {
+    if ((window.innerHeight + window.scrollY) >= document.body.offsetHeight) {
+      handleScroll();
+    }
+  });
