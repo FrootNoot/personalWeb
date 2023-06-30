@@ -9,7 +9,6 @@ const elementobserver = new IntersectionObserver((entries) => {
             }else if (classList.contains('hidden-right')) {
                 classList.add('show');
             }
-            // Add more conditions for different classes and animation classes as needed
         } 
     });
 });
