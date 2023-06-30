@@ -2,6 +2,7 @@
 
 html{
     scroll-behavior: smooth;;
+    overflow-x: hidden;
   }
 
 *{
@@ -15,6 +16,8 @@ body {
     background: #0b0f10;
     overflow-x: hidden;
     line-height: 1.5;
+    width:100%;
+
 }
 body::-webkit-scrollbar {
     width: 1em;
