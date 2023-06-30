@@ -75,7 +75,14 @@ function scrollToElement(elementId) {
     });
   });
 
-
+  window.onscroll = function () {
+	let scrollPos = window.scrollY;
+	let arrow = document.getElementById("arrow");
+	if (scrollPos <= 3) {
+		arrow.classList.add("fade-out");
+		arrow.classList.remove("fade-in");
+	} 
+};
 
 function handleScroll() {
     let arrow = document.getElementById("arrow");
