@@ -519,14 +519,13 @@ header {
 }
 
 .introduction-text{
-    color: #ededed;
-    background: transparent;
+    color: #efefef;
     position: absolute;
     max-width: 50em;
     top: 15em;
     left: 10%;
-    z-index: 1;
     font-size: 100%;
+    z-index: 1;
     
 }
 
@@ -1025,10 +1024,10 @@ header {
 
 
 #linkedIn{
-    text-decoration: none;
     color: #ededed;
     font-size: large;
     transition: 1s;
+    text-underline-offset: 10px;
 }
 
 .bxl-linkedin-square{
@@ -1038,7 +1037,6 @@ header {
 
 #linkedIn:hover{
     color: #7ba5dd;
-    font-weight: 1000;
     text-decoration: underline #7ba5dd;
 }
 
@@ -1055,6 +1053,7 @@ header {
         background-color: #101415;
         text-align: center;
         font-size: 80%;
+        padding-top: 50px;
     }
 
     .skill-container::after{
@@ -1072,6 +1071,8 @@ header {
         height: 400px;
       }
     
+
+
     .about-me-content{
         flex-direction: column;
     }
@@ -1083,6 +1084,7 @@ header {
     .bx{
         font-size: 700%;
     }
+
 
     .brief{
         max-width: 90%;
