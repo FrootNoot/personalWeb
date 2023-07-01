@@ -970,15 +970,18 @@ nav ul li a {
     width: 100%;
     padding: 0.8em;
     background-color: #c0c0c0;
-    color: #000000;
+    color: black;
     border-radius: 8px;
-    font-size: 1.2em;
+    font-size: 1.6em;
     transition: 0.3s;
+    font-weight: 1000;
 }
 
 .contact button:hover{
     background-color: #f1f3f4;
 }
+
+
 
 @media only screen and (max-width: 520px) {
     .bx{
