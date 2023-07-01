@@ -771,9 +771,10 @@ nav ul li a {
 
 #linkedIn{
     color: #ededed;
-    font-size: large;
+    font-size: 1em;
     transition: 1s;
     text-underline-offset: 10px;
+    width: 100%;
 }
 
 
@@ -903,6 +904,17 @@ nav ul li a {
 }
 
 
+.background-accent{
+    transform: rotate(6deg);
+    z-index: -2;
+    position: absolute;
+    width: 150%;
+    background-color: #101415;
+    left: -30%;
+    height: 100%;
+    margin-top: -3%;
+}
+
 
 .contact{
     min-height: 50vh;
@@ -940,13 +952,13 @@ nav ul li a {
     border-radius: 5px;
     margin: 0.5em 0 1em 0;
     font-size: 1.1em;
-    background: #101415;
+    background: #0b0f10;
     color: white;
     caret-color: white;
 }
 
 .contact label {
-    color: #a0a0a0;
+    color: #ffffff;
 }
 
 .contact textarea {
@@ -961,7 +973,7 @@ nav ul li a {
 
 .contact input::placeholder,
 .contact textarea::placeholder{
-    color: #bababa;
+    color: #ffffff;
 }
 
 .contact button {
@@ -978,7 +990,7 @@ nav ul li a {
 }
 
 .contact button:hover{
-    background-color: #f1f3f4;
+    background-color: #7a7a7a;
 }
 
 
@@ -1003,6 +1015,8 @@ nav ul li a {
     }
   }
 
+
+
 @media screen and (max-width: 864px) {
     .my-skills::after{
         bottom: 15%;
@@ -1013,8 +1027,10 @@ nav ul li a {
     }
 
     .arrow-container {
-        bottom: 5px;
+        bottom: 10%
       }
+
+
       .arrow::before {
         content: "";
         position: absolute;
@@ -1025,7 +1041,7 @@ nav ul li a {
         transform: rotate(-45deg);
     }
     
-      
+
 
     .about-me-content{
         flex-direction: column;
@@ -1047,7 +1063,8 @@ nav ul li a {
         width: 100vw;
         position: static;
         padding-top: 100px;
-        font-size: 1em;
+        font-size: max(1.5vh, 0.7em);
+        
 
     }
 
