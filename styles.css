@@ -27,7 +27,19 @@ nav{
 }
 
 
-
+body::-webkit-scrollbar {
+    width: 1em;
+  }
+   
+  body::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  }
+   
+  body::-webkit-scrollbar-thumb {
+    background-color: #ededed;
+    outline: 1px solid slategrey;
+  }
+  
 .logo {
     left: 10%;
     position: absolute;
@@ -905,13 +917,11 @@ nav ul li a {
 
 
 .background-accent{
-    transform: rotate(6deg);
     z-index: -2;
     position: absolute;
-    width: 150%;
+    width: 100%;
     background-color: #101415;
-    left: -30%;
-    height: 100%;
+    height: 85%;
     margin-top: -3%;
 }
 
@@ -946,6 +956,7 @@ nav ul li a {
 
 .contact input, 
 .contact textarea {
+    z-index:1000; 
     border: none;
     padding: 0.8em;
     width:100%; 
