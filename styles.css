@@ -986,6 +986,7 @@ nav ul li a {
 }
 
 .contact button {
+    z-index: 1000;
     border:none;
     cursor: pointer;
     width: 100%;
