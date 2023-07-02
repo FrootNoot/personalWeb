@@ -39,7 +39,7 @@ body::-webkit-scrollbar {
     background-color: #ededed;
     outline: 1px solid slategrey;
   }
-  
+
 .logo {
     left: 10%;
     position: absolute;
@@ -783,10 +783,8 @@ nav ul li a {
 
 #linkedIn{
     color: #ededed;
-    font-size: 1em;
     transition: 1s;
     text-underline-offset: 10px;
-    width: 100%;
 }
 
 
@@ -921,7 +919,7 @@ nav ul li a {
     position: absolute;
     width: 100%;
     background-color: #101415;
-    height: 85%;
+    height: 100vh;
     margin-top: -3%;
 }
 
@@ -1007,6 +1005,12 @@ nav ul li a {
 
 
 @media only screen and (max-width: 520px) {
+
+    #linkedIn{
+        font-size: 0.95em;
+
+    }
+
     .bx{
         font-size: 650%;
     }
