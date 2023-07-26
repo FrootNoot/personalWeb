@@ -1,6 +1,6 @@
 
 html{
-    scroll-behavior: smooth;;
+    scroll-behavior: smooth;
     overflow-x: hidden;
   }
 
@@ -118,6 +118,7 @@ nav ul li a {
     color: white;
     z-index: 9990;
     opacity: 1;
+    pointer-events: auto;
 }
 
 #nav:checked ~ .nav-wrapper ul li a {
@@ -1094,6 +1095,7 @@ nav ul li a {
           z-index: -1;
           background: #101415;
           opacity: 0;
+	  pointer-events: none;
           transition: all 0.2s ease;
     }
 
