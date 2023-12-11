@@ -915,13 +915,9 @@ nav ul li a {
 }
 
 
-.background-accent{
-    z-index: -2;
-    position: absolute;
-    width: 100%;
+.contact-me{
     background-color: #101415;
-    height: 100vh;
-    margin-top: -3%;
+    padding-top: 50px;
 }
 
 
